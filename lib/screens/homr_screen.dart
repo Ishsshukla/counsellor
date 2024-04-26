@@ -2,9 +2,12 @@ import 'package:counsellor/components/homecard_2.dart';
 import 'package:counsellor/components/homecard_3.dart';
 import 'package:counsellor/components/homecard_4.dart';
 import 'package:counsellor/navbar/navigation.dart';
+import 'package:counsellor/screens/chat.dart';
+import 'package:counsellor/screens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:counsellor/components/home_card.dart';
+
 class Homepage extends StatefulWidget {
   @override
   State<Homepage> createState() => _HomepageState();
@@ -20,11 +23,19 @@ class _HomepageState extends State<Homepage> {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Image.asset(
-              'assets/Ellipse 2.png',
-              width: 60,
-              height: 60,
-              // color: Colors.blue[300],
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => profilepage()),
+                );
+              },
+              child: Image.asset(
+                'assets/Ellipse 2.png',
+                width: 60,
+                height: 60,
+                // color: Colors.blue[300],
+              ),
             ),
             const SizedBox(
               width: 20,
@@ -63,7 +74,10 @@ class _HomepageState extends State<Homepage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Add your onPressed logic here
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => chatpage()),
+          ); // Add your onPressed logic here
         },
         child: Image(
           image: AssetImage('assets/Girl waiting.png'),
