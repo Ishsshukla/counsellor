@@ -1,4 +1,4 @@
-import 'package:counsellor/const/const.dart';
+
 import 'package:flutter/material.dart';
 
 Widget chattxt(
@@ -6,7 +6,9 @@ Widget chattxt(
   value,
   clr,
   BuildContext context,
-) {
+) 
+
+{
   return Padding(
     padding: EdgeInsets.only(left: value, right: 10, top: 10, bottom: 10),
     child: Container(

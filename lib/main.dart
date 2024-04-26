@@ -4,6 +4,7 @@ import 'package:counsellor/components/homecard_4.dart';
 import 'package:counsellor/navbar/navigation.dart';
 import 'package:counsellor/screens/chat.dart';
 import 'package:counsellor/screens/homr_screen.dart';
+import 'package:counsellor/screens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:counsellor/components/home_card.dart';
@@ -21,11 +22,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'chat',
+      initialRoute: 'profile',
       // initialRoute: 'subject_wise_attendance',
       routes: {
         'chat': (context) => chatpage(),
         'homepage': (context) => Homepage(),
+        'profile': (context) => profilepage(),
       },
     );
   }

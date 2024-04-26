@@ -2,7 +2,6 @@ import 'package:counsellor/components/homecard_2.dart';
 import 'package:counsellor/components/homecard_3.dart';
 import 'package:counsellor/components/homecard_4.dart';
 import 'package:counsellor/navbar/navigation.dart';
-import 'package:counsellor/screens/chat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:counsellor/components/home_card.dart';
